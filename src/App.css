@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
+}
+body{
+  background-color: #f8f8f8;
+}
+
+:root{
+  --secondaryText: #444;
+  --thirdTxt: #5cbcac;
+  --primaryTxt: #e95724;
+  --backgroundColor : #fff;
+}
+
+p{
+  font-size: 16px;
+  letter-spacing: 1.4px;
+}
+
+h1{
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+h2{
+  font-size: 44px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+h3{
+  font-size: 36px;
+}
+h4{
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+h5{
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+
+@media(max-width: 1024px){
+  h1{
+    font-size: 48px;
+  }
+}
+
+@media (max-width:500px){
+  h1{
+    font-size: 40px
+  }
+  h3{
+    font-size: 28px;
+  }
+}
+.hrOne{
+  width: 100%;
+  height: 1px;
+  border: none;
+  display: block;
+  background-color: #5e5e6146;
+}
+@keyframes beat{
+  0%{
+    transform: scale(0.7);
+  }
+  25%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.7);
+  }
+  
+  75%{
+    transform: scale(1);
+  }
+  
+  100%{
+    transform: scale(0.7);
+  }
+
+}
+.fallback-container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.fallback-container img{
+  animation: beat 2s infinite;
+}
+.forPadding{
+  padding: 20px 100px;
+
+  
+}
+@media(max-width: 768px){
+  .forPadding{
+    padding: 20px 40px;
+  }
+}
+@media(max-width: 500px){
+  .forPadding{
+    padding: 20px;
+  }
+}
