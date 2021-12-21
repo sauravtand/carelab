@@ -1,13 +1,13 @@
 {
   "name": "cob-clone",
   "version": "0.1.0",
+  "homepage": "http://local/carelab",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "@trendyol-js/react-carousel": "^2.0.0",
-    "firebase": "^9.6.1",
     "gsap": "^3.9.0",
     "p-min-delay": "^4.0.1",
     "react": "^17.0.2",

@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.render(
   <Router 
-  basename='/carelab'
+  // basename='/carelab'
   >
     <App />
   </Router>,
