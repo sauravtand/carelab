@@ -44,7 +44,7 @@ const ContactContainer = styled.div`
   .container{
     display: flex;
     width: 100%;
-    padding: 160px 40px 100px 40px;
+    padding: 40px 40px 100px 40px;
     justify-content: space-evenly;
     align-items: center;
     background-image: url('./images/svg2.webp') ;
@@ -105,7 +105,7 @@ const ContactContainer = styled.div`
       }
     }
     @media(max-width: 1024px){
-      padding: 120px 40px;
+      padding: 40px 40px 100px 40px;
     }
     @media(max-width: 768px){
       padding: 120px 10px 50px 10px;

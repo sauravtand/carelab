@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
+import gsap from 'gsap'
+import { Circ } from 'gsap/gsap-core'
+import { TweenMax, Power4 } from 'gsap/gsap-core'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ServicesCard = (props) => {
+  const linkRef = useRef([]);
+
+  useEffect(() => {
+    gsap.from(linkRef.current, {
+      y: 100,
+      duration: 5,
+      opacity: 0,
+      ease: Power4.inOut,
+      scrollTrigger: {
+        trigger: linkRef.current,
+        // markers: true,
+        start: "top bottom",
+        end: "top 300px",
+        scrub: true
+      }
+    });
+  }, []);
+
   return (
-    <ServicesCardContainer>
+    <ServicesCardContainer  ref={linkRef}>
       <img src={props.img} alt="" />
       <div className="card-content">
        <h4>{props.title}</h4>

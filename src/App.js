@@ -2,11 +2,11 @@ import './App.css';
 import {
   BrowserRouter as 
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import { ascAboutPage, ascAppointmentPage, ascContactPage, ascCovidCarePage, ascHomePage, ascLabTestPage, ascLoginPage, ascMedicinePage, ascVideoConsultPage } from './components/App/ayncComponent';
 import { Suspense } from 'react';
-
 
 function App() {
   
@@ -20,6 +20,9 @@ function App() {
     >
       <div className="App">
         <Switch>
+        {/* <Route exact path="/">
+          <Redirect to="/" />
+        </Route> */}
           <Route path='/' exact component={ascHomePage}>
             {/* <HomePageContainer/> */}
          
@@ -41,7 +44,7 @@ function App() {
           <Route path='/login' exact component={ascLoginPage}>
           </Route>
           
-          {/* <Route path='/' exact component={ascPageNotFound}>
+          {/* <Route path='*' render={()=> "page not found"}>
           </Route> */}
         </Switch>
         

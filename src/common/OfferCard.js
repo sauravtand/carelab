@@ -12,9 +12,9 @@ const OfferCard = (props) => {
         <h4>{props.title}</h4>
         <p>{props.subTitle}</p>
         {props.test && <p><span>{props.test} Test Included</span> </p>}
-        
-        <hr className='hrOne' />
-        <div className="price">
+{/*         
+        <hr className='hrOne' /> */}
+        {/* <div className="price">
           <div className="discounted">
             <h5>Rs. {props.dPrice}</h5>
           </div>
@@ -30,7 +30,7 @@ const OfferCard = (props) => {
 
           }
           
-        </div>
+        </div> */}
       </div>
     </CardContainer>
   )

@@ -21,7 +21,7 @@ const data=  {
   title: 'Book a Lab Test Online',
   subTitle: 'Home services availabele for sample collection',
   btnTitle: 'book now',
-  var1: 'Certified Clicnic',
+  var1: 'Certified Pathology Labs ',
   var2: 'Online Reports',
   img: './images/labTest.webp',
   pathName: 'http://lunivacare.ddns.net:8080/mHealth/Member/sampleWithTestList'

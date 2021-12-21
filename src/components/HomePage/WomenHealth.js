@@ -1,22 +1,46 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Button from '../../common/Button'
+import gsap from 'gsap'
+import {  Power4 } from 'gsap/gsap-core'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 const WomenHealth = () => {
+
+  const imgMove = useRef([]);
+
+  useEffect(() => {
+    gsap.from(imgMove.current, {
+      x: 200,
+      y: 200,
+      duration: 5,
+      opacity: 0,
+      ease: Power4.inOut,
+      scrollTrigger: {
+        trigger: imgMove.current,
+        // markers: true,
+        start: "top bottom",
+        end: "top center",
+        scrub: true
+      }
+    });
+  }, []);
+
   return (
     <WomenHealthContainer>
       <div className="left">
         <div className="content">
-          <h3>Women Health</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati itaque maxime unde laborum quisquam exercitationem consequuntur minima expedita ab?</p>
+          <h3>Women Health Care</h3>
+          <p>Delivering better outcomes in lower cost through modern virtual care for women and families. <br/> Through experts Anywhere, Anytime</p>
           <div className="btn">
             <Button title='consult now' secondaryBtn></Button>
           </div>
         </div>
       </div>
       <div className="right">
-        <div className="img">
-          <img src="./images/women.png" alt="" />
+        <div className="img" >
+          <img ref={imgMove} src="./images/women.png" alt="" />
           <div className="blob2">
             <img src="./images/blob2.svg" alt="" />
           </div>
@@ -39,7 +63,7 @@ const WomenHealthContainer = styled.div`
   } */
   .left{
     padding: 20px;
-    margin-left: 200px;
+    margin-left: 160px;
     text-align: left;
     flex: 0.5;
     z-index: 30;

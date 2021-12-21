@@ -1,13 +1,33 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Button from '../../common/Button'
+import gsap from 'gsap'
+import {  Power4 } from 'gsap/gsap-core'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const MentalHealth = () => {
+  const imgMove = useRef([]);
+
+  useEffect(() => {
+    gsap.from(imgMove.current, {
+      x: -200,
+      duration: 5,
+      opacity: 0,
+      ease: Power4.inOut,
+      scrollTrigger: {
+        trigger: imgMove.current,
+        // markers: true,
+        start: "top bottom",
+        end: "top center",
+        scrub: true
+      }
+    });
+  }, []);
   return (
     <MentalHealthContainer className=''>
       <div className="left">
-        <div className="img">
-          <img src="./images/doctor1.png" alt="" />
+        <div className="img" >
+          <img ref={imgMove} src="./images/doctor1.png" alt="" />
           <div className="pattern">
             <img src="./images/pattern.png" alt="" />
           </div>
@@ -20,8 +40,9 @@ const MentalHealth = () => {
       </div>
       <div className="right">
         <div className="content">
-          <h3>Mental health</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, quas repellendus! Ducimus porro facere fuga voluptatum molestias cupiditate magnam tempora.</p>
+          <h3>Mental Health Companion</h3>
+          <p>If you are struggling with emotional problems or simply want to be more aware of 
+your mood and mental wellbeing, Luniva care accompanies you with personalized care support.</p>
           <div className="btn">
           <Button title="Consult now" secondaryBtn pathName=''></Button>
           </div>

@@ -10,23 +10,23 @@ const servicesContent = [
   //   img: './images/svg/COVID-Icons (12).svg'
   // },
   {
-    title: 'Video Consult',
+    title: 'Online Consult',
     txt: 'Consult doctors via online',
     img: './images/svg/COVID-Icons (11).svg'
   },
   {
     title: 'Lab Test',
-    txt: 'Home based sample collection and reports',
+    txt: 'Home sample collection and reports',
     img: './images/svg/COVID-Icons (19).svg'
   },
   {
-    title: 'Appintment',
+    title: 'Appointment',
     txt: 'Book an appointment wherever whenever',
     img: './images/svg/COVID-Icons (5).svg'
   },
   {
     title: 'Online Repots',
-    txt: 'Reporting system online via internet',
+    txt: 'Online reporting system',
     img: './images/svg/COVID-Icons (25).svg'
   }
 
@@ -38,7 +38,7 @@ const LandingPageTwo = () => {
       {/* multipel cards */}
       {
         servicesContent.map(e=>(
-          <ServicesCard key={e.title} title={e.title} txt={e.txt} img={e.img} />
+          <ServicesCard  key={e.title} title={e.title} txt={e.txt} img={e.img} />
         ))
       }
       
@@ -62,6 +62,7 @@ const LandingPageTwoContainer = styled.div`
   }
   @media(max-width: 1024px){
     justify-content: center;
+    padding: 40px 10px 40px 10px;
     gap: 20px;
   }
  

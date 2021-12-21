@@ -14,8 +14,8 @@ const LoginPage = () => {
     <LoginPageContainer>
       <div className="container">
         <img src="./images/logo.png" alt="" />
-        <Button title='Doctors Login' secondaryBtn></Button>
-        <Button title='Patient Login' secondaryBtn></Button>
+        <Button title='Doctors Login' pathName='http://lunivacare.ddns.net:8080/mHealth/Login/auth'  secondaryBtn></Button>
+        <Button title='Patient Login' pathName='http://lunivacare.ddns.net:8080/mHealth/Login/authMem' secondaryBtn></Button>
         <div className="cross" onClick={handleClick}>
         <i className='icon-times'></i>
       </div>

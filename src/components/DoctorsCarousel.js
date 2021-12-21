@@ -13,8 +13,8 @@ const DoctorsCarousel = () => {
   return (
     <PageContainer className='forPadding'>
       <div className="detail">
-        <h3>Consult best doctors of Nepal for any health concern</h3>
-          <p>safe, secure and reliable</p>
+        <h3>Consult best doctors for any health concern</h3>
+          <p>Safe, Secure and Reliable</p>
       </div>
 
       {/* autoplay={true} */}
@@ -94,7 +94,7 @@ const PageContainer = styled.div`
   }
   @media(max-width: 1300px){
     .detail{
-      width: 700px;
+      width: 800px;
     }
     
   }

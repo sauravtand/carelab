@@ -39,7 +39,7 @@ const LabTestCollection = () => {
           items: 3.2
         },
         1440:{
-          items: 4.8
+          items: 4.2
         }
       }}>
         {

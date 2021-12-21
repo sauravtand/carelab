@@ -10,8 +10,6 @@ const TestCard = (props) => {
       <div className="content">
         <h5>{props.tesName}</h5>
         <p>{props.testDis}</p>
-        <hr />
-        <h4>{props.price}</h4>
       </div>
       
     </TestCardContainer>

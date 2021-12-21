@@ -51,7 +51,7 @@ const AboutContainer = styled.div`
   /* background-color: var(--backgroundColor); */
 
   .top{
-    padding: 200px 100px 20px 100px;
+    padding: 40px 100px 20px 100px;
     display: flex;
     .left, .right{
       flex: 0.5

@@ -15,10 +15,10 @@ import NavBar from '../../common/NavBar';
 
 const data=  {
     title: 'Consult with best Doctors of Nepal',
-    subTitle: 'safe, secure and reliable',
+    subTitle: 'Safe, Secure and Reliable',
     btnTitle: 'Consult Now',
     var1: 'Verified Docotors',
-    var2: 'Dogital Medication',
+    var2: 'Digital Medication',
     img: './images/doc3.webp'
   };
   const howData = [
@@ -29,7 +29,7 @@ const data=  {
     },
     {
       title: 'Choose Your Doctor',
-      dis: 'Select best doctors working in Nepal',
+      dis: 'Select best doctors',
       img: './images/mobDoc2.png'
     },
     {
@@ -43,15 +43,11 @@ const VideoConsultComponent = () => {
   return (
     <>
     <NavigationBar></NavigationBar>
-    {/* <NavBar /> */}
     <MainContainer>
       <LandingPage data= {data}></LandingPage>
       <HowItWorksNew data= {howData} />
-      {/* <VideoConsultHowItWorks></VideoConsultHowItWorks> */}
       <VideoConsultOffers></VideoConsultOffers>
-      {/* <VideoDoctorsComponent></VideoDoctorsComponent> */}
       <DoctorsCarousel/>
-      {/* <LandingPageFour></LandingPageFour> */}
     </MainContainer>
     <Footer></Footer>
     </>

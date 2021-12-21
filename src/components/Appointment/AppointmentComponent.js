@@ -14,7 +14,7 @@ const data=  {
   title: 'You can book your appointment Online',
   subTitle: 'We will try to get you perfect appointment schedule',
   btnTitle: 'book Now',
-  var1: 'Certified Doctors and Clinics',
+  var1: 'Certified Doctors and Labs',
   var2: 'Online Reports',
   img: './images/user.png',
   pathName: 'http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'
