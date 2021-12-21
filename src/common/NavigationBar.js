@@ -88,7 +88,7 @@ const NavigationBar = () => {
         
         </div>
         <Button title={'log-in'}  secondaryBtn 
-        pathName='/login'
+        pathName='login'
         >
         </Button>
       </NavContainer>

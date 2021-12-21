@@ -48,7 +48,7 @@ const MedicineComponent = () => {
 export default MedicineComponent
 
 const Container = styled.div`
-   padding: 100px 0px 40px 0px;
+   padding: 60px 0px 40px 0px;
   @media(max-width: 768px){
     padding: 100px 40px;
   }
