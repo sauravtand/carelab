@@ -11,33 +11,9 @@ const ClientImg = [
   {
     img:"./images/logo/samjana.jpg"
   },
-  // {
-  //   img:"./images/logo/matri-sisu.jpg"
-  // },
   {
     img:"./images/logo/LifeCareDi.png"
   },
-  // {
-  //   img:"./images/logo/manmohan.jpg"
-  // },
-  // {
-  //   img:"./images/logo/nepal.png"
-  // },
-  // {
-  //   img:"./images/logo/sarobar.jpg"
-  // },
-  // {
-  //   img:"./images/logo/khangriHospital.jpg"
-  // },
-  // {
-  //   img:"./images/logo/skinarts.jpg"
-  // },
-  // {
-  //   img:"./images/logo/chirayupolyclinic.png"
-  // },
-  // {
-  //   img:"./images/logo/ChinariHospital.jpg"
-  // }
 ]
 
 const Client = () => {

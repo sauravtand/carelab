@@ -6,12 +6,10 @@ import NavigationBar from '../common/NavigationBar'
 const PageNotFound = () => {
   return (
     <>
-      
       <Container>
         <img src="./images/pageNotFound.svg" alt="" />
        <h3>page not found</h3>
       </Container>
-      
     </>
   )
 }

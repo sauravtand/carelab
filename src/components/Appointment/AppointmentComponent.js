@@ -5,10 +5,7 @@ import NavigationBar from '../../common/NavigationBar'
 import Footer from '../../common/Footer'
 import ClinicAppointment from './ClinicAppointment'
 import DoctorsAppointment from './DoctorsAppointment'
-import HowItWorks from '../../common/HowItWorks'
-import DoctorsCarousel from '../DoctorsCarousel'
 import HowItWorksNew from '../../common/HowItWorksNew'
-import NavBar from '../../common/NavBar'
 
 const data=  {
   title: 'You can book your appointment Online',
@@ -42,11 +39,10 @@ const howData = [
 const AppointmentComponent = () => {
   return (
     <>
-      {/* <NavBar /> */}
+   
       <NavigationBar></NavigationBar>
       <Container>
         <LandingPage data={data}></LandingPage>
-        {/* <HowItWorks></HowItWorks> */}
         <HowItWorksNew data={howData}></HowItWorksNew>
         <DoctorsAppointment></DoctorsAppointment>
         <ClinicAppointment></ClinicAppointment>

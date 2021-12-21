@@ -34,7 +34,7 @@ const VideoConsultOffers = () => {
   return (
     <div className="forPadding">
     <TitleHeading>
-      <h3>Video Consolt Packages</h3>
+      <h3>Online Consultation Packages</h3>
       <p>Some of our best picked packages, with good reviews </p>
     </TitleHeading>
     <Caontiner>

@@ -3,13 +3,11 @@ import styled from 'styled-components'
 import Button from '../common/Button'
 import NavigationBar from '../common/NavigationBar'
 import Footer from '../common/Footer'
-import NavBar from '../common/NavBar'
 
 const ContactUsComponent = () => {
   return (
     <ContactContainer>
       <NavigationBar></NavigationBar>
-      {/* <NavBar /> */}
         <div className="container">
         <div className="left">
           <h1>Get In Touch</h1>

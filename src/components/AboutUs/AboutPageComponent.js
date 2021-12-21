@@ -6,7 +6,7 @@ import AboutMidComponent from './AboutMidComponent'
 import MediaCoverage from './MediaCoverage'
 import Client from '../Client'
 import LandingPage from '../../common/LandingPage'
-import NavBar from '../../common/NavBar'
+
 
 const data=  {
   title: 'Right Choice of Careness',
@@ -21,7 +21,6 @@ const data=  {
 const AboutPageComponent = () => {
   return (
     <>
-      {/* <NavBar /> */}
       <NavigationBar></NavigationBar>
       <AboutContainer>
         <div className="top">

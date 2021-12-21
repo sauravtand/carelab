@@ -43,7 +43,7 @@ const menuItem= [
   },
   {
     'subTitle': 'Covid Care',
-    'pathName': '/cividcare'
+    'pathName': '/covidcare'
   }
 ]
 

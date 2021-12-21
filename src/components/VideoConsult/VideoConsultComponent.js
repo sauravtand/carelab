@@ -3,15 +3,10 @@ import styled from 'styled-components'
 import LandingPage from '../../common/LandingPage';
 import NavigationBar from '../../common/NavigationBar';
 import Footer from '../../common/Footer';
-import Offers from '../LabTest/Offers';
-import LandingPageFour from '../LandingPageFour';
-import VideoConsultHowItWorks from './VideoConsultHowItWorks'
 import VideoConsultOffers from './VideoConsultOffers';
-import VideoDoctorsComponent from './VideoDoctorsComponent'
 import DoctorsCarousel from '../DoctorsCarousel';
-import HowItWorks from '../../common/HowItWorks';
 import HowItWorksNew from '../../common/HowItWorksNew';
-import NavBar from '../../common/NavBar';
+
 
 const data=  {
     title: 'Consult with best Doctors of Nepal',

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import LandingPage from '../../common/LandingPage'
 import NavigationBar from '../../common/NavigationBar'
 import Footer from '../../common/Footer'
-import NavBar from '../../common/NavBar'
 import HowItWorksNew from '../../common/HowItWorksNew'
 
 const data=  {
@@ -36,7 +35,6 @@ const MedicineComponent = () => {
   return (
     <>
       <NavigationBar></NavigationBar>
-      {/* <NavBar /> */}
       <Container>
         <LandingPage data={data}></LandingPage>
       </Container>

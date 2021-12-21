@@ -3,13 +3,9 @@ import styled from 'styled-components'
 import NavigationBar from '../../common/NavigationBar'
 import Footer from '../../common/Footer'
 import DoctorsCarousel from '../DoctorsCarousel'
-import LandingPageFour from '../LandingPageFour'
-import LandingPageOne from '../LandingPageOne'
 import LandingPageTwo from '../LandingPageTwo'
 import Offers from '../LabTest/Offers'
-import ClinicAppointment from '../Appointment/ClinicAppointment'
 import LandingPageSix from '../LandingPageSix'
-import NavBar from '../../common/NavBar'
 import MentalHealth from './MentalHealth'
 import WomenHealth from './WomenHealth'
 
@@ -17,7 +13,6 @@ const HomePage = () => {
   return (
     <MainContainer>
       <NavigationBar />
-      {/* <NavBar /> */}
       <LandingPageSix></LandingPageSix>
       <LandingPageTwo></LandingPageTwo>
       <WomenHealth></WomenHealth> 

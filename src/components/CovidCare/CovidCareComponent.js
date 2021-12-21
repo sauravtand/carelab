@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Button from '../../common/Button'
 import NavigationBar from '../../common/NavigationBar'
 import Footer from '../../common/Footer'
-import NavBar from '../../common/NavBar'
 
 const faciliteis = [
   {
@@ -40,8 +39,7 @@ const faciliteis = [
 const CovidCareComponent = () => {
   return (
     <>
-    <NavBar />
-    {/* <NavigationBar></NavigationBar> */}
+    <NavigationBar></NavigationBar>
     <Container>
       <div className="container">
         <div className="top">
@@ -93,7 +91,7 @@ export default CovidCareComponent
 
 
 const Container = styled.div`
-  padding: 180px 0 50px 0;
+  padding: 40px 0 50px 0;
   display: flex;
   justify-content: center;
   background-color: var(--backgroundColor);

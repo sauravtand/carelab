@@ -18,7 +18,7 @@ const LandingPageSix = () => {
         </li>
         <li>
           <i className='icon-chat-3'></i>
-          <p>Receive online medical advices, lab report &Prescriptions</p>
+          <p>Receive online medical advices, lab report & Prescriptions</p>
         </li>
         <li>
           <i className='icon-line-calendar'></i>

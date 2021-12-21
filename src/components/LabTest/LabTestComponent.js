@@ -3,17 +3,9 @@ import styled from 'styled-components'
 import LandingPage from '../../common/LandingPage';
 import NavigationBar from '../../common/NavigationBar';
 import Footer from '../../common/Footer';
-import LandingPageFour from '../LandingPageFour';
-// import NavigationBar from '../../common/NavigationBar'
 import LabTestCollection from './LabTestCollection'
-// import Footer from '../Footer'
 import Offers from './Offers'
-// import LandingPageFour from './LandingPageFour'
-// import LandingPage from '../common/LandingPage'
-import HowItWorks from '../../common/HowItWorks'
 import HowItWorksNew from '../../common/HowItWorksNew';
-import NavBar from '../../common/NavBar';
-import Clinics from '../Clinics';
 import Labs from '../Labs';
 
 
@@ -47,16 +39,12 @@ const howData = [
 const LabTestComponent = () => {
   return (
     <>
-      {/* <NavBar /> */}
       <NavigationBar></NavigationBar>
       <Container>
         <LandingPage data = {data}></LandingPage>
         <HowItWorksNew data= {howData} />
         <LabTestCollection></LabTestCollection>
-        {/* offer */}
         <Offers />
-        {/* <LandingPageFour></LandingPageFour> */}
-        {/* <Clinics></Clinics> */}
         <Labs></Labs>
       </Container>
       <Footer></Footer>

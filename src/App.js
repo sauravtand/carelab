@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { ascAboutPage, ascAppointmentPage, ascContactPage, ascCovidCarePage, ascHomePage, ascLabTestPage, ascLoginPage, ascMedicinePage, ascVideoConsultPage } from './components/App/ayncComponent';
 import { Suspense } from 'react';
+import PageNotFound from './components/PageNotFound'
 
 function App() {
   
@@ -44,7 +45,7 @@ function App() {
           <Route path='/login' exact component={ascLoginPage}>
           </Route>
           
-          {/* <Route path='*' render={()=> "page not found"}>
+          {/* <Route path='*' render={()=> 'page not found'}>
           </Route> */}
         </Switch>
         
