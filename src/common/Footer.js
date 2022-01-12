@@ -87,10 +87,17 @@ const FooterContainer = styled.div`
         width: 180px;
       }
       i{
-        font-size: 16px;
-        color: var(--secondaryText);
+        font-size: 14px;
+        color: #fefefe;
+        background-color: var(--primaryTxt);
         margin-right: 10px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
+        padding: 4px;
+        border-radius: 50%;
+      }
+      li{
+        display: flex;
+        align-items: center;
       }
 
     }

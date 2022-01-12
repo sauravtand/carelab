@@ -141,7 +141,7 @@ const MentalHealthContainer = styled.div`
     flex-direction: column;
     .left{
       order: 2;
-      margin: 20px 0;
+      margin: 40px 0 0 0;
     }
     .right{
       order: 1;

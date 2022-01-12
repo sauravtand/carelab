@@ -13,7 +13,7 @@ const data=  {
   btnTitle: 'book Now',
   var1: 'Certified Doctors and Labs',
   var2: 'Online Reports',
-  img: './images/user.png',
+  img: './images/user1.png',
   pathName: 'http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'
 };
 const howData = [
@@ -60,6 +60,6 @@ const Container = styled.div`
     padding: 100px 0px 0px 0px;
   }
   @media(max-width: 500px){
-    padding: 120px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
   }
 `

@@ -48,9 +48,9 @@ export default AboutPageComponent
 
 const AboutContainer = styled.div`
   /* background-color: var(--backgroundColor); */
-
+ 
   .top{
-    padding: 40px 100px 20px 100px;
+    padding: 160px 100px 20px 100px;
     display: flex;
     .left, .right{
       flex: 0.5
@@ -77,10 +77,17 @@ const AboutContainer = styled.div`
     }
     
     @media(max-width: 768px){
-      padding: 120px 40px;
+      padding: 100px 40px 20px 40px;
+      .left, .right{
+        flex: 0.5;
+        padding: 10px;
+        img{
+          width: 100%;
+        }
+      }
     }
     @media(max-width: 500px){
-      padding: 120px 20px 20px 20px;
+      padding: 80px 20px 20px 20px;
       flex-direction: column;
       img{
         width: 100%

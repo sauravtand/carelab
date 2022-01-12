@@ -177,7 +177,10 @@ const Container = styled.div`
    
   }
   @media(max-width: 768px){
-    padding: 120px 20px 20px 20px;
+    padding: 100px 20px 20px 20px;
+  }
+  @media(max-width: 768px){
+    padding: 80px 20px 20px 20px;
   }
 `
 const FacilitiesContainer = styled.div`

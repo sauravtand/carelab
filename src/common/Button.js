@@ -6,7 +6,7 @@ const Button = (props) => {
   const {title, primaryBtn, secondaryBtn, outlineBtn} = props;
   return (
     <>
-    {primaryBtn && <a href={props.pathName}>
+    {primaryBtn && <a target={'_blank'} href={props.pathName}>
     <PrimaryButtonContainer>
         {title}
     </PrimaryButtonContainer>

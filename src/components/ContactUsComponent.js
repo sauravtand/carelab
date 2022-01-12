@@ -107,15 +107,16 @@ const ContactContainer = styled.div`
       }
     }
     @media(max-width: 1024px){
-      padding: 40px 40px 100px 40px;
+      padding: 200px 40px 100px 40px;
     }
     @media(max-width: 768px){
-      padding: 120px 10px 50px 10px;
+      padding: 100px 10px 50px 10px;
       .left{
         li{
+          font-size: 16px;
           i{
             padding: 10px;
-            margin-right: 4px;
+            margin-right: 10px;
           }
       }
       }
@@ -124,7 +125,7 @@ const ContactContainer = styled.div`
 
     @media(max-width: 500px){
       flex-direction: column;
-      padding: 130px 10px 40px 10px;
+      padding: 60px 10px 40px 10px;
 
       .left{
         li{
@@ -136,6 +137,16 @@ const ContactContainer = styled.div`
       }
       .right{
         margin-top: 20px;
+        form{
+          width: 365px;
+        }
+      }
+    }
+    @media(max-width: 320px){
+      .right{
+        form{
+          width: 300px;
+        }
       }
     }
   }

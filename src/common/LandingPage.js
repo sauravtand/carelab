@@ -29,7 +29,7 @@ const LandingPage = (props) => {
 export default LandingPage
 
 const Container = styled.div`
-  margin-top: 20px;
+  margin-top: 170px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -40,7 +40,7 @@ const Container = styled.div`
   border-bottom-right-radius: 20px;
   position: relative;
   width: calc(100% - 100px);
-  
+  padding: 20px 100px;
 
   .left{
     h3{
@@ -77,8 +77,8 @@ const Container = styled.div`
     overflow: hidden;
     
     img{
-      width: 300px;
-      height: 350px;
+      width: 260px;
+      height: 300px;
       border-bottom-right-radius: 20px;
       object-fit: cover;
       object-position: top;
@@ -100,7 +100,7 @@ const Container = styled.div`
   } */
 
   @media(max-width: 1024px){
-      padding: 20px 40px;
+      padding: 10px 40px;
       .left{
         flex: 0.6;
       }

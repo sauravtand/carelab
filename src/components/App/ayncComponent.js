@@ -10,6 +10,6 @@ export const ascVideoConsultPage = lazy(()=> pMinDelay(import('../../containers/
 export const ascLabTestPage = lazy(()=> pMinDelay(import('../../containers/LabTestConainer'), 2000));
 export const ascMedicinePage = lazy(()=> pMinDelay(import('../../containers/MedicineContainer'), 2000));
 export const ascAppointmentPage = lazy(()=> pMinDelay(import('../../containers/AppointmentContainer'), 2000));
-export const ascLoginPage = lazy(()=> pMinDelay(import('../../common/LoginPage'), 2000));
+export const ascLoginPage = lazy(()=> pMinDelay(import('../../common/MobileLogIn'), 2000));
 
 // export const ascPageNotFound = lazy(()=> pMinDelay(import('../PageNotFound'), 1000));

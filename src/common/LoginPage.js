@@ -5,10 +5,9 @@ import Button from './Button'
 
 
 
-const LoginPage = () => {
-  let history = useHistory();
+const LoginPage = ({closeFun, ...props} ) => {
   const handleClick = () => {
-    history.push('./')
+    closeFun(false)
   }
   return (
     <LoginPageContainer>
@@ -28,12 +27,13 @@ const LoginPage = () => {
 export default LoginPage
 
 const LoginPageContainer = styled.div`
-  background-color: #f8f8f8;
+  background-color:#eed9d997;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+ 
  
   .container{
     width: 400px;

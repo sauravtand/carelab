@@ -1,34 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import styled, {keyframes} from 'styled-components'
-import {NavLInkCompoenntBot,NavLInkCompoenntTop} from '../components/NavLInkCompoennt'
+import styled, { keyframes } from 'styled-components'
+import { NavLInkCompoenntBot, NavLInkCompoenntTop } from '../components/NavLInkCompoennt'
 import Button from './Button'
+import LoginPage from './LoginPage'
 import TopNav from './TopNav'
 
 const navItem = [
   {
     'title': 'Online Consulation',
-    'subTitle' : "Online Doctors",
-    'pathName' : 'videoconsult'
+    'subTitle': "Online Doctors",
+    'pathName': 'videoconsult'
   },
   {
     'title': 'Lab Test',
-    'subTitle' : "Home Sample Collection",
+    'subTitle': "Home Sample Collection",
     'pathName': "labtest"
   },
   {
     'title': 'Medicine',
-    'subTitle' : "Home Delivery Service",
+    'subTitle': "Home Delivery Service",
     'pathName': "medicine"
   },
   {
     'title': 'Appointment',
-    'subTitle' : "Book an appointment",
+    'subTitle': "Book an appointment",
     'pathName': 'appointment'
   }
-  
+
 ]
-const menuItem= [
+const menuItem = [
   {
     'subTitle': 'About us',
     'pathName': 'about'
@@ -51,11 +52,19 @@ const NavigationBar = () => {
 
   const [menu, setMenu] = useState(false);
   const [offset, setOffset] = useState(0);
- 
-  function bergerChangeValue(){
-    if(menu == false){
+  const [logPop, setlogPop] = useState(false);
+
+  function popLog() {
+    setlogPop(!logPop)
+  }
+  function closeFun(val) {
+    setlogPop(val)
+  }
+
+  function bergerChangeValue() {
+    if (menu == false) {
       setMenu(true);
-    }else{
+    } else {
       setMenu(false);
     }
   };
@@ -69,70 +78,85 @@ const NavigationBar = () => {
 
   return (
     <>
-    <NavigationContainer>
+      <NavigationContainer>
 
-      {
-        offset <= 100 ? <TopNav/ > : '' 
-      }
-      
-      <NavContainer>
-       <LogoContainer>
-          <Link to='/'>
-            <img src="./images/logo.png" alt="" />
-          </Link>
-        </LogoContainer>
-        <div className="navLink">
-        {navItem.map(e => (
-          <NavLInkCompoenntTop key={e.title} title={e.title} subTitle={e.subTitle} pathName={e.pathName}/>
-        ))}
-        
-        </div>
-        <Button title={'log-in'}  secondaryBtn 
-        pathName='login'
-        >
-        </Button>
-      </NavContainer>
-      <hr className="hrOne"/>
-      <MenuContainer>
+        {
+          offset <= 100 ? <TopNav /> : ''
+        }
+
+        <NavContainer>
+          <LogoContainer>
+            <Link to='/'>
+              <img src="./images/logo.png" alt="" />
+            </Link>
+          </LogoContainer>
+          <div className="navLink">
+            {navItem.map(e => (
+              <NavLInkCompoenntTop key={e.title} title={e.title} subTitle={e.subTitle} pathName={e.pathName} />
+            ))}
+
+          </div>
+          <Button title={'log-in'} secondaryBtn
+            // pathName='login'
+            onclick={popLog}
+          >
+          </Button>
+
+
+        </NavContainer>
+        <hr className="hrOne" />
+        <MenuContainer>
           {
             menuItem.map(e => (
-              <NavLInkCompoenntBot key={e.subTitle}  subTitle={e.subTitle}  pathName={e.pathName}/>
+              <NavLInkCompoenntBot key={e.subTitle} subTitle={e.subTitle} pathName={e.pathName} />
             ))
           }
-        
-      </MenuContainer>
 
-      
-    </NavigationContainer>
-    <ResponiveNav>
-      <TopNav></TopNav>
-      <ResNavContainer>
-        <LogoContainer>
-          <Link to='/'>
-            <img src="./images/logo.png" alt="" />
-          </Link>
-        </LogoContainer>
-        <div onClick={bergerChangeValue}>
-        <i className={menu == false ? 'icon-equals': 'icon-times'}></i>    
+        </MenuContainer>
+
+        <div className={`loginInPop ${logPop === true ? 'visible' : 'notVisible'}`}>
+          <LoginPage closeFun={closeFun}></LoginPage>
         </div>
-      </ResNavContainer>
-      {
-        menu == true ? 
-        <HambergerMenu>
+      </NavigationContainer>
+      <ResponiveNav>
+        <TopNav></TopNav>
+        <ResNavContainer>
+          <LogoContainer>
+            <Link to='/'>
+              <img src="./images/logo.png" alt="" />
+            </Link>
+          </LogoContainer>
+          <div onClick={bergerChangeValue}>
+            <i className={menu == false ? 'icon-equals' : 'icon-times'}></i>
+          </div>
+        </ResNavContainer>
         {
-          navItem.map(e => (
-          <NavLInkCompoenntTop key={e.title} title={e.title} subTitle={e.subTitle} pathName={e.pathName}/>
-          ))}
-        {
-          menuItem.map(e => (
-            <NavLInkCompoenntBot key={e.subTitle}  subTitle={e.subTitle}  pathName={e.pathName}/>
-          ))
+          menu == true ?
+            <HambergerMenu>
+              {
+                navItem.map(e => (
+                  <NavLInkCompoenntTop key={e.title} title={e.title} subTitle={e.subTitle} pathName={e.pathName} />
+                ))}
+              {
+                menuItem.map(e => (
+                  <NavLInkCompoenntBot key={e.subTitle} subTitle={e.subTitle} pathName={e.pathName} />
+
+                ))
+
+              }
+              <div style={{'marginLeft': "30px", 'marginTop': '10px' }}>
+                <Button title={'log-in'} secondaryBtn
+                  pathName='login'
+                // onclick={popLog}
+                >
+                </Button>
+              </div>
+
+
+            </HambergerMenu> : ''
         }
-        
-      </HambergerMenu> : ''
-      }
-      
-    </ResponiveNav>
+
+      </ResponiveNav>
     </>
   )
 }
@@ -153,10 +177,24 @@ const NavigationContainer = styled.div`
   backdrop-filter: blur( 14.5px );
   -webkit-backdrop-filter: blur( 14.5px );
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
- position: relative;
+ position: fixed;
   width: 100%;
   z-index: 100;
 
+  .loginInPop{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    
+  }
+  .visible{
+    visibility: visible;
+  }
+  .notVisible{
+    visibility: hidden;
+  }
 
   @media(max-width: 768px){
     display: none;
@@ -183,7 +221,6 @@ const NavContainer = styled.div`
     padding: 10px 20px;
   }
  
-
 `
 const LogoContainer = styled.div`
   display: flex;

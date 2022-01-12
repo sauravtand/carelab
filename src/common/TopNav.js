@@ -42,5 +42,7 @@ const TopNavContainer = styled.div`
   a{
     color: var(--primaryTxt);
   }
-
+  @media(max-width: 500px){
+    display: none;
+  }
 `

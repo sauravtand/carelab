@@ -58,7 +58,7 @@ export default LandingPageSix
 const LandingPageContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  padding: 0px 200px;
+  padding: 200px;
   min-height: 90vh;
   align-items: center;
   position: relative;
@@ -71,6 +71,7 @@ const LandingPageContainer = styled.div`
     img{
       width: 100%;
       height: 100%;
+      margin-top: 100px;
     }
     .img{
       position: absolute;
@@ -112,16 +113,16 @@ const LandingPageContainer = styled.div`
 
   }
   @media(max-width: 1024px){
-    padding: 10px 10px 100px 100px;
+    padding: 100px 10px 100px 100px;
     .left{
-      flex: 0.6;
+      flex: 0.5;
       margin-top: 100px;
     }
     .right{
-      flex: 0.4;
+      flex: 0.5;
       .img{
         position: absolute;
-        top: 0px;
+        top: 20px;
         right: -30px;
         width: 650px;
         
@@ -136,24 +137,27 @@ const LandingPageContainer = styled.div`
 
   
   @media(max-width: 768px){
-    padding: 100px 40px 40px 40px;
+    padding: 80px 40px 40px 40px;
     overflow: hidden;
     .left{
       margin-top: 60px;
+      flex: 0.6;
     }
     .right{
-     
+      flex: 0.4;
       .img{
         position: absolute;
         width: 550px;
         top: 80px;
         right: -100px;
+        top: -40px;
       }
       .blob{
         width: 480px;
         height: 480px;
         top: 60px;
-        right: 20px;
+        right: 70px;
+        top: -40px;
       }
      
     }
@@ -161,7 +165,7 @@ const LandingPageContainer = styled.div`
   @media(max-width: 500px){
     display: flex;
     flex-direction: column;
-    padding: 85px 20px 0px 20px;
+    padding: 40px 20px 0px 20px;
   
     .left{
       order: 3;
@@ -175,7 +179,7 @@ const LandingPageContainer = styled.div`
       order: 1;
       .img{
         position: relative;
-        top: 0;
+        top: -100px;
         left: 50%;
         transform: translateX(-50%);
         width: 300px;
@@ -188,7 +192,7 @@ const LandingPageContainer = styled.div`
         }
       }
       .blob{
-        margin-top: 0px;
+        margin-top: -100px;
         width: 380px;
         height: 380px;
       }
