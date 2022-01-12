@@ -1,0 +1,37 @@
+
+  <svg
+    width='1000'
+    height='1000'
+    viewBox='0 0 1000 1000'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <defs>
+      
+      
+      
+      <radialGradient
+      id='radialGradientId'
+      r='100%'
+      cx='50%'
+      cy='50%'
+    >
+      <stop offset='0%'  stop-color='#ffeff3' />
+			<stop offset='100%'  stop-color='#dafffd' />
+    </radialGradient>
+      
+      
+      
+      <clipPath id='shape'>
+        <path fill='currentColor' d='M825.5,713Q746,926,537,862Q328,798,215.5,649Q103,500,210.5,342.5Q318,185,493.5,196.5Q669,208,787,354Q905,500,825.5,713Z'></path>
+      </clipPath>
+    </defs>
+  
+    
+
+    <g  clip-path='url(#shape)'>
+      <path fill='url(#radialGradientId)' d='M825.5,713Q746,926,537,862Q328,798,215.5,649Q103,500,210.5,342.5Q318,185,493.5,196.5Q669,208,787,354Q905,500,825.5,713Z' />
+    </g>
+
+    
+  
+  </svg>

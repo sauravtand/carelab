@@ -4,6 +4,9 @@ import Button from '../../common/Button'
 import gsap from 'gsap'
 import {  Power4 } from 'gsap/gsap-core'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import img1 from '../../assets/images/doctor1.png'
+import img2 from '../../assets/images/pattern.png'
+import img3 from '../../assets/images/blob.svg'
 
 const MentalHealth = () => {
   const imgMove = useRef([]);
@@ -27,12 +30,12 @@ const MentalHealth = () => {
     <MentalHealthContainer className=''>
       <div className="left">
         <div className="img" >
-          <img ref={imgMove} src="./images/doctor1.png" alt="" />
+          <img ref={imgMove} src={img1} alt="" />
           <div className="pattern">
-            <img src="./images/pattern.png" alt="" />
+            <img src={img2} alt="" />
           </div>
           <div className="blob">
-            <img src="./images/blob.svg" alt="" />
+            <img src={img3} alt="" />
           </div>
         </div>
         

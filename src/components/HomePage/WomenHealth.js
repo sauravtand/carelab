@@ -4,7 +4,9 @@ import Button from '../../common/Button'
 import gsap from 'gsap'
 import {  Power4 } from 'gsap/gsap-core'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import img1 from '../../assets/images/women.png'
+import img2 from '../../assets/images/blob2.svg'
+ 
 
 const WomenHealth = () => {
 
@@ -40,9 +42,9 @@ const WomenHealth = () => {
       </div>
       <div className="right">
         <div className="img" >
-          <img ref={imgMove} src="./images/women.png" alt="" />
+          <img ref={imgMove} src={img1} alt="" />
           <div className="blob2">
-            <img src="./images/blob2.svg" alt="" />
+            <img src={img2} alt="" />
           </div>
         </div>
       </div>

@@ -57,9 +57,9 @@ export default AppointmentComponent
 const Container = styled.div`
   padding: 20px 0px 0px 0px;
   @media(max-width: 768px){
-    padding: 100px 40px;
+    padding: 100px 0px 0px 0px;
   }
   @media(max-width: 500px){
-    padding: 120px 20px;
+    padding: 120px 0px 0px 0px;
   }
 `

@@ -92,6 +92,10 @@ const ContactContainer = styled.div`
           height: 36px;
           border-radius: 10px;
           padding: 10px;
+          border: 1px solid #232325;
+          &:focus-visible{
+            border: 1px solid #415248;
+          }
         }
         textarea{
           width: 100%;

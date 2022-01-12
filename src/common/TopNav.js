@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 const TopNav = () => {
   return (
     <TopNavContainer>
-      <p>COVID-19? We're in this together & will get through this, Together. <span>Learn more</span></p>
+      <p>COVID-19? We're in this together & will get through this, Together. <a href='covidcare'>Learn more</a></p>
     </TopNavContainer>
   )
 }
@@ -38,6 +38,9 @@ const TopNavContainer = styled.div`
   p{
     color: #f3f3f3;
     padding: 4px 0;
+  }
+  a{
+    color: var(--primaryTxt);
   }
 
 `

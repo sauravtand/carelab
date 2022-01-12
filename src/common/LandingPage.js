@@ -29,7 +29,7 @@ const LandingPage = (props) => {
 export default LandingPage
 
 const Container = styled.div`
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -78,7 +78,10 @@ const Container = styled.div`
     
     img{
       width: 300px;
+      height: 350px;
       border-bottom-right-radius: 20px;
+      object-fit: cover;
+      object-position: top;
     }
    
   }
@@ -104,15 +107,16 @@ const Container = styled.div`
     }
 
   @media(max-width: 768px){
-    margin-top: 70px;
+    margin-top: 40px;
     /* padding: 20px; */
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     .left{
       flex: 0.8;
     }
     .right{
       img{
         width: 260px;
+        height: 300px;
       }
     }
     

@@ -19,7 +19,9 @@ const HomePage = () => {
       <MentalHealth />
       <DoctorsCarousel/>
       <Offers></Offers>
+      
       <Footer/>
+
     </MainContainer>
   )
 }

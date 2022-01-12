@@ -14,7 +14,8 @@ const data=  {
     btnTitle: 'Consult Now',
     var1: 'Verified Docotors',
     var2: 'Digital Medication',
-    img: './images/doc3.webp'
+    img: './images/doc3.webp',
+    pathName: 'http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'
   };
   const howData = [
     {
@@ -44,6 +45,7 @@ const VideoConsultComponent = () => {
       <VideoConsultOffers></VideoConsultOffers>
       <DoctorsCarousel/>
     </MainContainer>
+    <script src='http://localhost:90/carelabinventory/index_bundle.js'></script>
     <Footer></Footer>
     </>
   )
@@ -58,6 +60,6 @@ const MainContainer = styled.div`
     padding: 90px 0px 0px 0px;
   }
   @media(max-width: 500px){
-    padding: 120px 20px 20px 20px;
+    padding: 120px 0px 0px 0px;
   }
 `

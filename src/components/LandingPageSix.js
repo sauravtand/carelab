@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from '../common/Button'
+import phone2 from '../assets/images/phone2.webp'
+import blob2 from '../assets/images/blob.png'
 
 const LandingPageSix = () => {
   return (
@@ -37,11 +39,11 @@ const LandingPageSix = () => {
       </div>
       <div className="right">
           <div className="img">
-            <img src="./images/phone2.webp" alt="" />
+            <img src={phone2} alt="" />
           </div>
         
         <div className="blob">
-          <img src="./images/blob.png" alt="" />
+          <img src={blob2} alt="" />
         </div>
       </div>
       
@@ -176,7 +178,7 @@ const LandingPageContainer = styled.div`
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 700px;
+        width: 300px;
         height: 400px;
         margin-bottom: -40px;
         img{
@@ -184,6 +186,11 @@ const LandingPageContainer = styled.div`
           object-fit: cover;
           object-position: top;
         }
+      }
+      .blob{
+        margin-top: 0px;
+        width: 380px;
+        height: 380px;
       }
      
     }

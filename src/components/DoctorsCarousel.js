@@ -25,10 +25,10 @@ const DoctorsCarousel = () => {
           items: 1
         },
         320:{
-          items: 1.2
+          items: 1.4
         },
         375:{
-          items: 1.6
+          items: 1.8
         },
         425:{
           items: 1.8
@@ -48,14 +48,16 @@ const DoctorsCarousel = () => {
       }}>
         {
           getData.map((e) => (
+            <>
             <DoctorCard key={e.doctorName} doctorName={e.doctorName} specilization={e.specilization} img={e.img} pathName={e.pathName}></DoctorCard>
+            </>
           ))
         }
       </OwlCarousel>
       </div>
 
       <div className="button">
-        <Button title='Other Doctors' secondaryBtn pthName='http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'></Button>
+        <Button title='Other Doctors' secondaryBtn pathName='http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'></Button>
       </div>
       
       
@@ -120,7 +122,7 @@ const PageContainer = styled.div`
     .detail{
       width: 100%;
     }
-    padding: 0px;
+    padding: 20px;
     .button{
       display: none;
     }

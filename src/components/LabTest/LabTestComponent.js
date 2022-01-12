@@ -16,7 +16,7 @@ const data=  {
   var1: 'Certified Pathology Labs ',
   var2: 'Online Reports',
   img: './images/labTest.webp',
-  pathName: 'http://lunivacare.ddns.net:8080/mHealth/Member/sampleWithTestList'
+  pathName: 'http://lunivacare.ddns.net:8080/mHealth/Member/memBookLab'
 };
 const howData = [
   {

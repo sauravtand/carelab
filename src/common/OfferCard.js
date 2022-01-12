@@ -41,9 +41,11 @@ export default OfferCard
 const CardContainer = styled.div`
     width: calc(25% - 20px);
     background-color: #fefefe;
-    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid transparent;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
     .hrOne{
       border: none;
@@ -53,6 +55,7 @@ const CardContainer = styled.div`
       color: var(--primaryTxt);
       margin-bottom: 10px;
       font-size: 20px;
+      font-weight: 400;
     }
     p{
       color: #232324;
@@ -114,6 +117,10 @@ const CardContainer = styled.div`
           }
       }
       }
+      &:hover{
+        border: 1px solid #a8f391;
+        box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37 );
+      }
   @media(max-width: 1024px){
     width: 48%;
   }
@@ -148,6 +155,9 @@ const CardContainer = styled.div`
   }
   @media(max-width: 500px){
     width: 100%;
+    .img{
+      height: 200px;
+    }
   }
 
 `

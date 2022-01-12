@@ -2,6 +2,7 @@ import './App.css';
 import {
   Switch,
   Route,
+  Redirect,
   // Redirect
 } from "react-router-dom";
 import { ascAboutPage, ascAppointmentPage, ascContactPage, ascCovidCarePage, ascHomePage, ascLabTestPage, ascLoginPage, ascMedicinePage, ascVideoConsultPage } from './components/App/ayncComponent';
@@ -21,33 +22,10 @@ function App() {
     >
       <div className="App">
         <Switch>
-        
-          {/* <Route path='/' exact component={ascHomePage}>
+        <Route exact path="/">
+            <Redirect to="/home" />
           </Route>
-          <Route path='/about' exact component={ascAboutPage}>
-          </Route>
-          <Route path='/contactus' exact component={ascContactPage}>
-          </Route>
-          <Route path='/covidcare' exact component={ascCovidCarePage}>
-          </Route>
-          <Route path='/videoconsult' exact component={ascVideoConsultPage}>
-          </Route>
-          <Route path='/labtest' exact component={ascLabTestPage}>
-          </Route>
-          <Route path='/medicine' exact component={ascMedicinePage}>
-          </Route>
-          <Route path='/appointment' exact component={ascAppointmentPage}>
-          </Route>
-          <Route path='/login' exact component={ascLoginPage}>
-          </Route> */}
-          
-          {/* <PublicRoute 
-            exact
-            path='/'
-            component={ascHomePage}
-          />  */}
-
-          <PublicRoute path='/' exact component={ascHomePage}>
+          <PublicRoute path='/home' exact component={ascHomePage}>
           </PublicRoute>
           <PublicRoute path='/about' exact component={ascAboutPage}>
           </PublicRoute>
