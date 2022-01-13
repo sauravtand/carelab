@@ -42,7 +42,7 @@ const ContactContainer = styled.div`
   .container{
     display: flex;
     width: 100%;
-    padding: 40px 40px 100px 40px;
+    padding: 160px 40px 100px 40px;
     justify-content: space-evenly;
     align-items: center;
     background-image: url('./images/svg2.webp') ;

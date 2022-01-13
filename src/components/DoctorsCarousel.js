@@ -25,13 +25,13 @@ const DoctorsCarousel = () => {
           items: 1
         },
         320:{
-          items: 1.4
+          items: 1.6
         },
         375:{
-          items: 1.8
+          items: 2
         },
         425:{
-          items: 1.8
+          items: 2
         },
         600:{
           items: 2.2,
@@ -40,7 +40,10 @@ const DoctorsCarousel = () => {
           items: 3.5
         },
         1000:{
-          items: 4.3
+          items: 4
+        },
+        1100:{
+          items: 5
         },
         1440:{
           items: 6
@@ -57,7 +60,7 @@ const DoctorsCarousel = () => {
       </div>
 
       <div className="button">
-        <Button title='Other Doctors' secondaryBtn pathName='http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'></Button>
+        <Button title='Other Doctors' viewButton pathName='http://lunivacare.ddns.net:8080/mHealth/Member/viewDocList'></Button>
       </div>
       
       
@@ -121,8 +124,9 @@ const PageContainer = styled.div`
   @media(max-width: 500px){
     .detail{
       width: 100%;
+      padding: 20px 20px 0px 20px;
     }
-    padding: 20px;
+    padding: 0px;
     .button{
       display: none;
     }

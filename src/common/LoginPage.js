@@ -5,7 +5,7 @@ import Button from './Button'
 
 
 
-const LoginPage = ({closeFun, ...props} ) => {
+const LoginPage = ({ closeFun, ...props }) => {
   const handleClick = () => {
     closeFun(false)
   }
@@ -13,13 +13,13 @@ const LoginPage = ({closeFun, ...props} ) => {
     <LoginPageContainer>
       <div className="container">
         <img src="./images/logo.png" alt="" />
-        <Button title='Doctors Login' pathName='http://lunivacare.ddns.net:8080/mHealth/'  secondaryBtn></Button>
-        <Button title='Patient Login' pathName='http://lunivacare.ddns.net:8080/mHealth/' secondaryBtn></Button>
+        <Button title='Doctors Login' pathName='http://lunivacare.ddns.net:8080/mHealth/' secondaryBtn></Button>
+        <Button title='Patient Login' pathName='http://lunivacare.ddns.net:8080/mHealth/Member/memLogin' secondaryBtn></Button>
         <div className="cross" onClick={handleClick}>
-        <i className='icon-times'></i>
+          <i className='icon-times'></i>
+        </div>
       </div>
-      </div>
-     
+
     </LoginPageContainer>
   )
 }
@@ -27,7 +27,10 @@ const LoginPage = ({closeFun, ...props} ) => {
 export default LoginPage
 
 const LoginPageContainer = styled.div`
-  background-color:#eed9d997;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 4px );
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,7 +13,7 @@ const MobileLogIn = () => {
       <div className="container">
         <img src="./images/logo.png" alt="" />
         <Button title='Doctors Login' pathName='http://lunivacare.ddns.net:8080/mHealth/' secondaryBtn></Button>
-        <Button title='Patient Login' pathName='http://lunivacare.ddns.net:8080/mHealth/' secondaryBtn></Button>
+        <Button title='Patient Login' pathName='http://lunivacare.ddns.net:8080/mHealth/Member/memLogin' secondaryBtn></Button>
         {/* <div className="cross" onClick={handleClick}>
           <i className='icon-times'></i>
         </div> */}

@@ -91,7 +91,7 @@ export default CovidCareComponent
 
 
 const Container = styled.div`
-  padding: 40px 0 50px 0;
+  padding: 160px 0 50px 0;
   display: flex;
   justify-content: center;
   background-color: var(--backgroundColor);

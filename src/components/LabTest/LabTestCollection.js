@@ -15,7 +15,7 @@ const LabTestCollection = () => {
     <Conatiner className='forPadding'>
       {/* CArds */}
       <div className="top">
-        <h3>Booke Test</h3>
+        <h3>Book Test</h3>
         <p>Some of the top selected tests,</p>
       </div>
       <div className="mid">
@@ -24,7 +24,7 @@ const LabTestCollection = () => {
           items: 1
         },
         375:{
-          items: 1.4
+          items: 1.6
         },
         425:{
           items: 1.8
@@ -36,10 +36,10 @@ const LabTestCollection = () => {
           items: 2.8
         },
         1024:{
-          items: 3.2
+          items: 4.1
         },
         1440:{
-          items: 4.2
+          items: 4.8
         }
       }}>
         {
@@ -51,7 +51,7 @@ const LabTestCollection = () => {
 
       </div>
       <div className="btn">
-        <Button title='Lern more' secondaryBtn></Button>
+        <Button title='Lern more' viewButton pathName={'http://lunivacare.ddns.net:8080/mHealth/Member/memBookLab'}></Button>
       </div>
       
      

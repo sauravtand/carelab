@@ -26,7 +26,7 @@ const howData = [
   },
   {
     title: 'Book Lab test',
-    dis: 'Home base sample collection, on users request',
+    dis: 'Home based sample collection, on users request',
     img: './images/mobDoc2.png'
   },
   {

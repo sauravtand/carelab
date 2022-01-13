@@ -101,8 +101,6 @@ const NavigationBar = () => {
             onclick={popLog}
           >
           </Button>
-
-
         </NavContainer>
         <hr className="hrOne" />
         <MenuContainer>
@@ -146,7 +144,7 @@ const NavigationBar = () => {
               }
               <div style={{'marginLeft': "30px", 'marginTop': '10px' }}>
                 <Button title={'log-in'} secondaryBtn
-                  pathName='login'
+                  pathName='login' 
                 // onclick={popLog}
                 >
                 </Button>

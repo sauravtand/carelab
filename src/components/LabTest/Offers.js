@@ -4,7 +4,7 @@ import OfferCard from '../../common/OfferCard'
 
 const data = [
   {
-    title: 'SARS Coid-19 package',
+    title: 'SARS Covid-19 package',
     subTitle: "Test Package for Covid Patient",
     test: 45,
     dPrice: '5000',
@@ -52,10 +52,6 @@ const Offers = () => {
             <OfferCard key={e.title} title={e.title} subTitle={e.subTitle} test={e.test} dPercent={e.dPercent} dPrice={e.dPrice} aPrice={e.aPrice} img={e.img}/>
           ))
         }
-    
-        
-        
-      
       </div>
       
     </Container>

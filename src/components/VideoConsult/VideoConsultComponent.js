@@ -30,7 +30,7 @@ const data=  {
     },
     {
       title: 'Get your Medication',
-      dis: 'Delevered from trusted pharmecies and clinics',
+      dis: 'Delivered from trusted pharmacies and clinics',
       img: './images/app.png'
     },
     

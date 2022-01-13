@@ -36,7 +36,7 @@ const WomenHealth = () => {
           <h3>Women Health Care</h3>
           <p>Delivering better outcomes in lower cost through modern virtual care for women and families. <br/> Through experts Anywhere, Anytime</p>
           <div className="btn">
-            <Button title='consult now' secondaryBtn></Button>
+            <Button title='consult now' viewButton pathName='http://lunivacare.ddns.net:8080/mHealth/Member/memLogin'></Button>
           </div>
         </div>
       </div>

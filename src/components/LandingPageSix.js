@@ -165,7 +165,7 @@ const LandingPageContainer = styled.div`
   @media(max-width: 500px){
     display: flex;
     flex-direction: column;
-    padding: 40px 20px 0px 20px;
+    padding: 40px 20px 10px 20px;
   
     .left{
       order: 3;
@@ -192,7 +192,8 @@ const LandingPageContainer = styled.div`
         }
       }
       .blob{
-        margin-top: -100px;
+        margin-top: 0px;
+        margin-right: 30px;
         width: 380px;
         height: 380px;
       }

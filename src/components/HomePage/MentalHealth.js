@@ -47,7 +47,7 @@ const MentalHealth = () => {
           <p>If you are struggling with emotional problems or simply want to be more aware of 
 your mood and mental wellbeing, Luniva care accompanies you with personalized care support.</p>
           <div className="btn">
-          <Button title="Consult now" secondaryBtn pathName=''></Button>
+          <Button title="Consult now" viewButton pathName='http://lunivacare.ddns.net:8080/mHealth/Member/memLogin'></Button>
           </div>
         </div>
       </div>

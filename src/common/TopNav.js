@@ -32,9 +32,14 @@ const TopNavContainer = styled.div`
   text-align: center;
   animation-name: ${animateNav};
   -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
   /* -webkit-animation-iteration-count: 1; */
   -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  -webkit-animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  /* -webkit-animation-direction: normal; */
   p{
     color: #f3f3f3;
     padding: 4px 0;

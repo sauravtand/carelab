@@ -15,7 +15,7 @@ const DoctorsAppointment = () => {
   return (
     
     <Container className='forPadding'>
-      <h3>Book a Dcotor Appointment</h3>
+      <h3>Book a Doctor Appointment</h3>
       <p>Consult best doctors of Nepal for any health concern</p>
 
      

@@ -3,22 +3,27 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Button = (props) => {
-  const {title, primaryBtn, secondaryBtn, outlineBtn} = props;
+  const { title, primaryBtn, secondaryBtn, viewButton } = props;
   return (
     <>
-    {primaryBtn && <a target={'_blank'} href={props.pathName}>
-    <PrimaryButtonContainer>
-        {title}
-    </PrimaryButtonContainer>
-     </a> }
-    {secondaryBtn && <a href={props.pathName} onClick={props.onclick}>
-      <SecondaryButtonContainer>
+      {primaryBtn && <a target={'_blank'} href={props.pathName}>
+        <PrimaryButtonContainer>
           {title}
-      </SecondaryButtonContainer>
-    </a> }
-    
-      </>
-    
+        </PrimaryButtonContainer>
+      </a>}
+      {secondaryBtn && <a href={props.pathName} onClick={props.onclick}>
+        <SecondaryButtonContainer>
+          {title}
+        </SecondaryButtonContainer>
+      </a>}
+      {viewButton && <a href={props.pathName} target={'_blank'} onClick={props.onclick}>
+        <SecondaryButtonContainer>
+          {title}
+        </SecondaryButtonContainer>
+      </a>}
+
+    </>
+
   )
 }
 
@@ -41,6 +46,7 @@ const PrimaryButtonContainer = styled.button`
   text-transform: uppercase;
   padding: 16px 40px;
   border: 3px solid rgba( 233, 83, 30, 0.85 );
+  text-transform: capitalize;
   @media(max-width: 768px){
     font-size: 16px;
     font-weight: 400;
@@ -66,4 +72,5 @@ const SecondaryButtonContainer = styled.div`
   font-size: 16px;
   min-width: 100px;
   text-align: center;
+  text-transform: capitalize;
 `

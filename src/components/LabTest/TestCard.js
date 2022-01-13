@@ -25,6 +25,7 @@ const TestCardContainer = styled.div`
   cursor: pointer;
   h5{
     color: var(--primaryTxt);
+    font-weight: 500;
   }
   p{
     color: #232324;

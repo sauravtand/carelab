@@ -55,7 +55,7 @@ const CardContainer = styled.div`
       color: var(--primaryTxt);
       margin-bottom: 10px;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
     }
     p{
       color: #232324;

@@ -47,11 +47,11 @@ const Footer = () => {
           <li><a href="#">Doctors</a></li>
           <li><a href="#">Clinics</a></li>
           <li><a href="#">Labs</a></li>
-          <li><a href="#">Pharmecy</a></li>
+          <li><a href="#">Pharmacy</a></li>
         </div>
 
         <div className="footerCard">
-          <h4>DownLoad App</h4>
+          <h4>Download App</h4>
           <li>
             <a href='https://play.google.com/store/apps/details?id=com.luniva.lunivacare&hl=en&gl=US&showAllReviews=true'>
               <img src="./images/googleplay.png" alt="" />
