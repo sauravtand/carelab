@@ -2,45 +2,61 @@
   "data": [
     {
       "doctorName": "Dr.Ashim Bista",
-      "specilization": "Orthopaedics",
+      "nmc":"",
+      "specilization": "Orthopedics",
       "img": "./images/doctors/ashim1.webp",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=2d6f8ea8a6656d4d3de29ded0a9eb7153f9e676e211157e384e25bb7dd5b67062fb453e8e4b6bd789e86e16f5d19dff7034725aeab8ae258b6d3a194ca7cfb66S1NTM318mTzj1ua7wV6XzxNZNa0H4hziuT5rrxCXJTZsblhCRv9bS/nBgJUlIFtYmDBIQr%2BJp2WFaA6hvYTJIAtjmabJH56WKZz8dkGkzS0moMBrOBrfigQgdBrWl94thF2OsjVUJBvLUD%2BEJja9D1m5S7ehEzqD8kjFLoJU2djrMvw4GZTkFdeCUIO3KGIvwSpL2YVZy8OsiMic5JI3KALs67dgbq8F9W/z9x/D2fqlV6kTstWzy0ojnOhSkOog4sUp7LuURBzLMTaMg3QudJ%2BIyhxCE3anT1XF3ZneTFxXIjLn5QtvoAeH3sK6qDtS%2BmanCuv6hKal/EvYk0Rgio8FKkPTZnK0yw9OXg//Lxiq%2BHodJuAL7nOE%2B5C7uxR/"
     },
     {
       "doctorName": "Dr.Karuna Sijapati",
+      "nmc":"",
       "specilization": "Dermatologist",
       "img": "./images/doctors/drkaruna.webp",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=73f9d3d9f1a74cd73f3199a4d0367268bc5b4421d6157ea5a4cfd001153fc99b1263963aed316b1b7146bbd589dffb3dbf140eefe759f1da90fa8fd4875f35e8qeQn4FnXBzfpPzHOjMeugDFrmmXfRbI6efST%2BCCTtMehgBQRwArA8%2BpG4D1%2BYN4MWjRxfAZjnpi/K/M7qu1FTkY8gwXDkTizN1vr2xYOcwaBX0dqqERDfXIys2c0oGR8pdocE2u757ixaHsI2bThMJeBBVva/7aPYuo8f%2BFyZNZgXPUDGzq9Yly/QPCNnjQ0JSyckyUyAgBDMcf2vbuqfzYe4Q%2BugiPILanWHnIdncYRsQZX3ktm9YY%2BbQNhqz28TpZaW9vU%2Bp2DvNZYlapL3Kw9ZBswNmLWdwW5wzUHBbCRoCXXvTTfRbr6hXI3Ty2u7p%2BoV%2B4kSyaVFrqTEOiGlOfBkOiWEYl2%2BZp%2B5WLCOGCwZeB/XoyPF4Uh7mcgOOH6ovvR5W/wl6Rmie26bixT3A=="
     },
     {
       "doctorName": "Dr.Richa Amatya",
+      "nmc":"",
       "specilization": "Psychiatry",
       "img": "./images/doctors/drRicha.webp",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=39b1d38a6a3b6c49018f8da86a8e4052fe0985bb25d7de04ae3e2cef80190aab4527558c1b32322761f3b04c9d9e9024c793bb10eb578fff9be04c34018d7d032M270q2x5hwvlMRMuvJm2Jq4S3KyceL2b3WqMG6MF/lrPbNX0TXvTCCIpo4cMXqPMlBZXsymRtdPBQiMjiW0HIWLt4KjJOIAxCHflHoR6sX88biWqMvjk7onccgfhTXW1Ny0zERnXLelhg9B0HNKBGgma0yuy2Lh/ohqOnRzUQQHJGkMLq/nIQnAskiQmiet11UxWFaTdsoNq1abAiFyWy8EZBuiAHRTQ8Aeg3RK9a44z%2BbIW3GMPCele0OxktmWytRqqUOy6PMMkG2AQjwaFjavoHiG3nj2%2BKccCMrlU%2BFeb2GOfR1xiU7jbekFSyCJgHofXPdtrqRvGdLqoa5jdrXOH7xFe8s0de8E%2BzPC6vY7gK1NSoMwXOooy64gDWw4uqCtYFF5lHNSTQK9PAsOAd/t80Pf%2B0eGTqoPKXAKSN1VwnAMujRZFlztcPc%2BpBs9R1xpPiKbQKTcW/at2H9SOSI95Ili5hS6LAur2BQT66w="
     },
     {
       "doctorName": "Dr.Nipun Shresth",
+      "nmc":"",
       "specilization": "Pediatrician",
       "img": "./images/doctors/drnipun.webp",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=ce7b44e917895d765b321b15936cbf040b444bdfaf8d8093706139a4f76104605e711b46ee94cc29c16e34e492f3b55e92ae6f79e0a0258b0d421a5cc356b0c7f9E0AQfJ9A34V4VR8U1%2BGYFuYGXHK07nU8tIBVBBTJXbwM1Fq5t9U1%2BJxIrziX0uhMYmGGQMyAfoM0WxuCsYm5l5eza8e0Tz2%2BVRUCixcixK1r83FDtZrFe7wQoXq%2BRRK0tBu%2BT%2BwR7%2BUUQf1uZRpoIcvcKdeOtvBgYbsdPjc5NGXRZNyrSJAMMP8VGzjFSBPBRQPuZZ5obpMVOGebfNfsG5ZoRoZF4yKK90vU2x7Tbe9FT1%2B7Ub/q9uVee9n8nMjiZFSo18RYdU6nYRipC7rrvfBjiEDsOquhEK25c9ItmzvGuyc8m04U0PwmW%2BCm/bTwCqWitcbWDftmZqvWlQ%2BDX2%2B/2fiF2vwwnsyq0haMNb0vBafrYnKNvwbVKSydCOjdHlULAXyU%2BXqny8F2vI3A=="
     },
     {
       "doctorName": "Dr.Aparna Shankar Yogacharya",
+      "nmc":"",
       "specilization": "Gynecology",
       "img": "./images/doctors/drAparna1.webp",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=42a229ec58225d504ca9414dbcdfb5885090a902a80713d28379b54b1ca4c3b16aef45e04a68712f9593f3506ad8f4b5027a4d798c4bacabb8ac0361712609ccv20l3mFqqa6stSwzpH8B5zbXCusOFeRG/QTJgPfOXD%2BzMAjMNyJChEtIxwUeRgW65dgFWR3hVpT609zSGh8O20QHw0QF9Ajm2hb02txYZMPVftyky9yzphc8Zn0zBeRG7qp5zKhq5GHxmNw6i2ZqdZEhObEaLeKcJ78yxgGMgl5hOxfA0k31EyS/rN5tpC4KynurneNz7gQyOjI93LxtNjVIZcWZQ0J/APrck4HWXdDDhrHSRbOB9rdDzlMIr%2Buj9xssg19IkJm8ju9IiJ09VQ2659c/nZWO/LlBdIsKZ39CBMZvokcsDPvz4UD0k2ybCYZtsEP00Dj%2BuTv0sMc3Au4O9gFBRQCFysolNjhBgCzwfGrgvKiu0aTsx6UoHAjTCMqLZnJRfb/qjn2WjMfKdEOg4pR7gYTGxlqSd4ycF5lz/9gFwqRT6/yyRN3cIYMq"
     },
     {
       "doctorName": "Dr.Ahish Raj Dhital",
+      "nmc":"20461",
       "specilization": "Medical Officer",
       "img": "./images/doctors/ahishraj.webp",
+      "education":"MBBS(TU),General Medicine",
+      "experience":"Grande International Hospital,Lecturer for Amnity College,Bluebird International College-Insurance Consultant,Team doctor for KTM Nepal,Covid online Luniva Care,Medical escort by air as well as land,Currently working at Naman home care as in house doctor",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=ad9e847987f834b4f6fb4d054bb5f6daa847de8e62fdddb4da685fa8000336fe875ce4bcb12268e36d589dcf34b8f61ad09541e0ebf6749c6f5bbbd89afb269eRYEZ7ftSjHguiLR7IzhJv1BPkoW2NJiDzejKR4BAYyMpxcO6M9mWZAG6r7vzuqiduYEQKD2izXvk4aGlK46StC4uUvz%2BT4NEFtTxzKDw5LsAdRYluLunwPVZoPCHamGzVV7qgJ7xsUfnvSgDIVGSRCnfrdfvmeQq7n8vjT9B7sqoQw9i6Dc8gN78kFg/SfzZyAKPPGy6HDN6OzL7cgsyflEMUUBAot3oGs85xz2i6xCztFfCJ5CDGJ7IPVlVmHWvGkQLJyFJGE86hO/j/ch30m7CO5r2N86ifySuTiTVcVU/fFzdsTPfRFupu1U51ck1bN/JsfGoQksUkilYusNfR3aEqKa0kTd/yJSpPYBXzn8="
     },
     {
-      "doctorName": "Pratichhya Shrestha",
-      "specilization": "orthopaedic",
+      "doctorName": "Dr.Pratichhya Shrestha",
+      "nmc":"",
+      "specilization": "Orthopedic",
       "img": "./images/doctors/pratichhya.webp",
       "pathName": "http://lunivacare.ddns.net:8080/mHealth/Doctors/docProfile?q=90cf2a9a46dea8a73addeda2d60a0ac5a0e202b35f376921cc78f824ad442fa928167174181774fb2ee30a073d683b15dd663dd8d68724c3ef1c28061b7df8498Fa2JBgl7ys2tzWU9eWaBjD1MKqzZlTCNrdqqBfrj3k%2BJkFwVfyHxF9uR2IRNiyApY3sRpj9wTSxTmdGqQF0LqqyiwOku6JbDPGKpUHym31lmy7qlCDYuXz8GMPxUUa2n8BlXuZmkkyIsnjozynTshOjJ5SgF3q1Td3ZhTZmWwZx/6GsOczOPCehsbJycTPy3kmtSc3zFLoqlx/aemLQgv0VeUVhH1WwRihefBxPzgYmZp2ZV2k3PhDCv7r1HJCqY7cTn1qRjdXMUKX7fyfMIMBEtyyZD7jJnwqNKz81VMWXQve8bvDl9/5l0PuWilf3/6yN21zrGcpWkt/HEcSAxcO/WAWnz%2B44pkGVR81VXpaLWEfnd5VtuefbeY/tI3bxop8VMiKIDOIaGiUq6uJtVjPIDWxm/sca1Nm7V3UJ38lcb1AWM7AdeZgj2A40dK5dbKc2sAk1EmnfKZgoqn0FhoUjWUV4b00%2B0xHSfMsOyLai0e9YM0w4y7qyDEys5eRzEiVYqi2Q57XldFsOFEZ2XAJ7kN5f6i6h9jFLVuuKKp/SiGxv6Q13qR%2B%2BpqZwDh/aZffAW8sZGqeUUmbc9UxKkd2CLJ7TmMWcthlaOViWLd0="
+    },
+    {
+      "doctorName": "Dr.Prajwol Rijal",
+      "nmc":"18570",
+      "specilization": "General ",
+      "img": "./images/doctors/dr prajwol .jpg",
+      "pathName": ""
     }
   ],
 

@@ -1,11 +1,8 @@
-import React, { useEffect, useRef } from 'react'
-import styled from 'styled-components'
-import gsap from 'gsap'
-import { Circ } from 'gsap/gsap-core'
-import { TweenMax, Power4 } from 'gsap/gsap-core'
+import React, { useEffect, useRef } from "react";
+import styled from "styled-components";
+import gsap from "gsap";
+import { Power4 } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,32 +20,32 @@ const ServicesCard = (props) => {
         // markers: true,
         start: "top bottom",
         end: "top 300px",
-        scrub: true
-      }
+        scrub: true,
+      },
     });
   }, []);
 
   return (
-    <ServicesCardContainer  ref={linkRef}>
+    <ServicesCardContainer ref={linkRef}>
       <img src={props.img} alt="" />
       <div className="card-content">
-       <h4>{props.title}</h4>
-       <p>{props.txt}</p>
+        <h4>{props.title}</h4>
+        <p>{props.txt}</p>
       </div>
     </ServicesCardContainer>
-  )
-}
+  );
+};
 
-export default ServicesCard
+export default ServicesCard;
 
 const ServicesCardContainer = styled.div`
-  width: 220px ;
+  width: 220px;
   background: #fefefe;
   box-shadow: 1px 1px 10px #23232442;
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding:30px 15px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px 15px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -56,33 +53,30 @@ const ServicesCardContainer = styled.div`
   align-items: center;
   text-align: center;
   cursor: pointer;
-  img{
+  img {
     width: 50%;
     margin-bottom: 10px;
   }
-  .card-content{
-    h4{
+  .card-content {
+    h4 {
       color: var(--thirdTxt);
       margin: 10px 0;
     }
-    p{
+    p {
       color: var(--secondryTxt);
     }
   }
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     width: 200px;
     padding: 20px 5px;
   }
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     width: 180px;
     padding: 20px 5px;
   }
-  @media (max-width: 400px){
+  @media (max-width: 400px) {
     width: 300px;
     padding: 20px 5px;
   }
-
-
-
-`
+`;

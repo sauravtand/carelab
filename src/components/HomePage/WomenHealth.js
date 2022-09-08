@@ -1,15 +1,12 @@
-import React, { useEffect, useRef } from 'react'
-import styled from 'styled-components'
-import Button from '../../common/Button'
-import gsap from 'gsap'
-import {  Power4 } from 'gsap/gsap-core'
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import img1 from '../../assets/images/women.png'
-import img2 from '../../assets/images/blob2.svg'
- 
+import React, { useEffect, useRef } from "react";
+import styled from "styled-components";
+import Button from "../../common/Button";
+import gsap from "gsap";
+import { Power4 } from "gsap/gsap-core";
+import img1 from "../../assets/images/women.png";
+import img2 from "../../assets/images/blob2.svg";
 
 const WomenHealth = () => {
-
   const imgMove = useRef([]);
 
   useEffect(() => {
@@ -24,8 +21,8 @@ const WomenHealth = () => {
         // markers: true,
         start: "top bottom",
         end: "top center",
-        scrub: true
-      }
+        scrub: true,
+      },
     });
   }, []);
 
@@ -34,14 +31,21 @@ const WomenHealth = () => {
       <div className="left">
         <div className="content">
           <h3>Women Health Care</h3>
-          <p>Delivering better outcomes in lower cost through modern virtual care for women and families. <br/> Through experts Anywhere, Anytime</p>
+          <p>
+            Delivering better outcomes in lower cost through modern virtual care
+            for women and families. <br /> Through experts Anywhere, Anytime
+          </p>
           <div className="btn">
-            <Button title='consult now' viewButton pathName='http://lunivacare.ddns.net:8080/mHealth/Member/memLogin'></Button>
+            <Button
+              title="consult now"
+              viewButton
+              pathName="http://lunivacare.ddns.net:8080/mHealth/Member/memLogin"
+            ></Button>
           </div>
         </div>
       </div>
       <div className="right">
-        <div className="img" >
+        <div className="img">
           <img ref={imgMove} src={img1} alt="" />
           <div className="blob2">
             <img src={img2} alt="" />
@@ -49,10 +53,10 @@ const WomenHealth = () => {
         </div>
       </div>
     </WomenHealthContainer>
-  )
-}
+  );
+};
 
-export default WomenHealth
+export default WomenHealth;
 
 const WomenHealthContainer = styled.div`
   display: flex;
@@ -63,46 +67,46 @@ const WomenHealthContainer = styled.div`
   /* .left, .right{
     flex: 0.4;
   } */
-  .left{
+  .left {
     padding: 20px;
     margin-left: 160px;
     text-align: left;
     flex: 0.5;
     z-index: 30;
-    h3{
+    h3 {
       color: var(--thirdTxt);
       margin-bottom: 20px;
     }
-    p{
+    p {
       color: var(--secondaryText);
       margin-bottom: 10px;
     }
-    .btn{
+    .btn {
       width: 200px;
       margin-top: 30px;
     }
-    @media(max-width: 1024px){
+    @media (max-width: 1024px) {
       margin-left: 100px;
     }
-    @media(max-width: 768px){
+    @media (max-width: 768px) {
       margin-left: 40px;
       flex: 1;
     }
-    @media(max-width: 500px){
+    @media (max-width: 500px) {
       margin-left: 20px;
       flex: 1;
     }
   }
-  .right{
-    .img{
+  .right {
+    .img {
       text-align: center;
       width: 400px;
       position: relative;
       z-index: 10;
-      img{
+      img {
         width: 100%;
       }
-      .blob2{
+      .blob2 {
         position: absolute;
         top: 0;
         right: 0;
@@ -110,52 +114,50 @@ const WomenHealthContainer = styled.div`
         width: 800px;
       }
 
-      @media(max-width: 1024px){
+      @media (max-width: 1024px) {
         width: 300px;
 
-        .blob2{
+        .blob2 {
           width: 600px;
           /* img{
             width: 100%;
           } */
         }
       }
-      @media(max-width: 768px){
+      @media (max-width: 768px) {
         width: 250px;
 
-        .blob2{
+        .blob2 {
           width: 500px;
           /* img{
             width: 100%;
           } */
         }
       }
-      @media(max-width: 500px){
+      @media (max-width: 500px) {
         width: 200px;
 
-        .blob2{
+        .blob2 {
           width: 400px;
           /* img{
             width: 100%;
           } */
         }
       }
-
     }
-    
   }
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     flex-direction: column;
-    .right{
+    .right {
       height: 200%;
-      .img{
-        margin-right: -200px; 
+      .img {
+        margin-right: -200px;
       }
     }
-    .left{
+    .left {
       width: 100%;
       margin: 0;
       padding: 20px;
     }
   }
-`
+`;
