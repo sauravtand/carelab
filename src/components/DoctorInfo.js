@@ -19,7 +19,7 @@ const DoctorInfo = (props) => {
       <NavigationBar />
       <Top>
         <div className="doc">
-          <h1>Doctor Details</h1>
+          <h2>Doctor Details</h2>
         </div>
       </Top>
       <DoctorInfoContainer>
@@ -37,7 +37,7 @@ const DoctorInfo = (props) => {
               <p>{ele}</p>
             ))}
           </div>
-          <h4 className="hello3">Experinece:</h4>
+          <h4 className="hello3">Experience:</h4>
           <div>
             {experience.map((ele) => (
               <p>{ele}</p>
@@ -45,6 +45,7 @@ const DoctorInfo = (props) => {
           </div>
         </div>
       </DoctorInfoContainer>
+
       <Footer />
     </>
   );
@@ -54,30 +55,32 @@ export default DoctorInfo;
 const Top = styled.div`
   padding-top: 135px;
   text-align: center;
-  color: #e8501a;
-  text-shadow: 5px 5px gray;
+  color: var(--primaryTxt);
 `;
 
 const DoctorInfoContainer = styled.div`
   display: flex;
-
+  width: fit-content;
+  margin: auto;
   padding: 15px;
-  background-color: #beaed300;
+  background-color: var(--backgroundColor);
   border-radius: 50px;
   box-shadow: 2px 2px 5px 5px gray;
 
   .hello {
-    color: #5cbcac;
+    color: var(--thirdTxt);
     text-shadow: 2px 2px gray;
   }
   .detail1 {
-    margin-left: 30px;
+    margin-left: 60px;
+    margin-bottom: 10px;
   }
   .photo img {
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     border-radius: 50px;
-    box-shadow: 10px 1px 10px 1px #e8501a;
+    box-shadow: 1px 1px 1px 1px var(--primaryTxt);
+    margin: 10px 10px 10px 10px;
   }
 
   .hello1 {

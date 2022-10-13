@@ -116,6 +116,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
+  margin-top: 10px;
   padding: 50px 100px 60px 100px;
   display: flex;
   justify-content: space-between;
